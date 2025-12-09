@@ -1,0 +1,31 @@
+
+from turtle import *
+import turtle as k
+import random
+kr=k.Turtle()
+k.colormode(255)
+#colors=['gray', 'grey', 'pink', 'orange', 'purple', 'brown', 'gold', 'violet', 'indigo', 'turquoise', 'lavender', 'beige']
+def random_color():
+    r=random.randint(0,255)
+    g=random.randint(0,255)
+    b=random.randint(0,255)
+    r_g_b=(r,g,b)
+    return r_g_b
+
+kr.speed("fastest")
+kr.circle(100)  #-----radius is in bracket
+
+for _ in range(1000):
+    kr.color(random_color())
+    kr.circle(100)
+    kr.right(10)
+
+
+
+
+
+
+screen=Screen()
+#change_color()
+screen.exitonclick()
+""
